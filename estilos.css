@@ -1,0 +1,112 @@
+.contenedor{/*PADRE*/
+    /* width:500px;
+     height:500px;/* POR QUÉ CON EL INSPECCIONAR CAMBIA DE COLOR CUANDO PONGO HEIGHT Y WIDHT*/
+     background-color:rebeccapurple;
+     padding:10px;/*¿SERÁ BUENO DARLE HEIGHT Y WIDTH AL CONTENEDOR PADRE?*/
+     font-size:30px;
+     text-align:center;
+     display:grid;
+    /* grid-template-columns:150px 50px 100px ;/**EN EL PADRE SI O SI TRABAJAR CON GRID-TEMPLATE*/
+     grid-gap: 10px;/*margen entre grids*/
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 3fr 3fr 10fr 1fr 2fr;    
+    /*aqui implementamos lo que diseñamos*/grid-template-areas: "header   header   header"
+                                                                "nav      nav      nav"
+                                                                "section  section  ads"
+                                                                "foot     foot     foot"
+                                                                "rrss      rrss      rrss";
+                                                                font-family: fantasy;
+                                                                color:white;
+                                                                letter-spacing: 2px;
+                                                                text-transform: uppercase;
+                                                            }
+.contenedor .header{
+    background-color: yellow;
+    grid-column:header;/*que se ocupe donde nombre el header en grid-template-areas*/
+    color: brown;
+
+}
+.contenedor .nav{
+    background-color: bisque;
+    grid-column:nav;
+    color:brown;
+}
+.contenedor .section{
+    background-color: azure;
+    grid-column:section;
+}
+.contenedor .section{
+    position: relative;
+}
+.contenedor .contenido1{
+    position: absolute;
+    width:500px;
+    height:350px;/*pregunta 500 se desbordaba*/
+    background-color: red;
+    top:10px;
+    left:20px;
+
+   
+}
+.contenedor .contenido2{
+    position: inherit;
+    width:500px;
+    height: 350px;
+    background-color: red;
+    top:10px;
+    left:600px;
+}
+.contenedor .ads{
+    background-color: blanchedalmond;
+    grid-column:ads;
+}
+.contenedor .ads{
+    position: relative;
+    
+}
+.contenedor .hijode{
+    position:absolute;
+    top:80px;
+    left:50px;
+
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+}
+.contenedor .foot{
+    background-color: chartreuse;
+    grid-column: foot;
+    position:relative;
+}
+.contenedor .rrss{
+    background-color:aquamarine;
+    grid-column:rrss;
+}
+.contenedor .rrss{
+    position:relative;
+
+}
+.contenedor .redes1{
+    position:absolute;
+    width:440px;
+    height:50px;
+    background-color: blueviolet;
+    top:13px;
+    left:20px;
+}
+.contenedor .rrss .redes2{
+    position: absolute;
+    width:440px;
+    height: 50px;
+    background-color: blueviolet;
+    top:13px;
+    left:520px;
+}
+.contenedor .rrss .redes3{
+    position: absolute;
+    width:440px;
+    height: 50px;
+    background-color: blueviolet;
+    top:13px;
+    left:1010px;
+}
